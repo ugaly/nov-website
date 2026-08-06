@@ -9,11 +9,11 @@ export function CtaBand() {
         src="/hero-dar.jpg"
         alt=""
         fill
-        className="object-cover object-[center_55%] opacity-35"
+        className="object-cover object-[center_55%] opacity-30"
         sizes="100vw"
         aria-hidden="true"
       />
-      <div className="absolute inset-0 bg-ink/70" aria-hidden="true" />
+      <div className="absolute inset-0 bg-ink/75" aria-hidden="true" />
 
       <div className="relative container-x flex flex-col gap-6 py-12 sm:gap-8 sm:py-16 lg:flex-row lg:items-center lg:justify-between lg:py-20">
         <Reveal>
@@ -21,14 +21,17 @@ export function CtaBand() {
             <h2 className="text-balance font-display text-xl font-semibold tracking-tight sm:text-2xl lg:text-3xl">
               You run the company. We keep it compliant.
             </h2>
-            <p className="mt-2.5 text-sm leading-relaxed text-white/60 sm:mt-3 sm:text-[0.975rem]">
+            <p className="mt-2.5 text-sm leading-relaxed text-white/55 sm:mt-3 sm:text-[0.975rem]">
               New formation, books brought current, or a retained partner — start with a short conversation.
             </p>
           </div>
         </Reveal>
         <Reveal delay={80}>
           <div className="flex w-full flex-col gap-2.5 sm:w-auto sm:flex-row sm:gap-3">
-            <a href="#contact" className="btn-primary">
+            <a
+              href="#contact"
+              className="inline-flex h-12 w-full items-center justify-center gap-2 rounded-sm bg-white px-6 text-sm font-semibold text-ink transition-colors hover:bg-white/90 sm:h-11 sm:w-auto"
+            >
               Request Consultation
               <ArrowUpRight className="size-4" />
             </a>

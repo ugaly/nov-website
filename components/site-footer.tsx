@@ -35,7 +35,7 @@ export function SiteFooter() {
           </p>
           <a
             href="#contact"
-            className="mt-5 inline-flex h-11 w-full items-center justify-center gap-2 rounded-sm bg-brand px-5 text-sm font-semibold text-brand-foreground transition-colors hover:bg-[#0d6b64] sm:mt-6 sm:w-auto"
+            className="mt-5 inline-flex h-11 w-full items-center justify-center gap-2 rounded-sm bg-white px-5 text-sm font-semibold text-ink transition-colors hover:bg-white/90 sm:mt-6 sm:w-auto"
           >
             Request Consultation
             <ArrowUpRight className="size-4" />
@@ -71,11 +71,11 @@ export function SiteFooter() {
             </h3>
             <ul className="mt-3 space-y-3.5 text-[0.8125rem] text-white/55 sm:text-sm">
               <li className="flex items-start gap-2.5">
-                <MapPin className="mt-0.5 size-3.5 shrink-0 text-brand-muted sm:size-4" />
+                <MapPin className="mt-0.5 size-3.5 shrink-0 text-white/40 sm:size-4" />
                 <span>Morocco Square, Dar es Salaam, Tanzania</span>
               </li>
               <li className="flex items-start gap-2.5">
-                <Mail className="mt-0.5 size-3.5 shrink-0 text-brand-muted sm:size-4" />
+                <Mail className="mt-0.5 size-3.5 shrink-0 text-white/40 sm:size-4" />
                 <a
                   href="mailto:companie@companies.co.tz"
                   className="break-all transition-colors hover:text-white"
@@ -84,7 +84,7 @@ export function SiteFooter() {
                 </a>
               </li>
               <li className="flex items-center gap-2.5">
-                <Phone className="size-3.5 shrink-0 text-brand-muted sm:size-4" />
+                <Phone className="size-3.5 shrink-0 text-white/40 sm:size-4" />
                 <a href="tel:+255700000000" className="transition-colors hover:text-white">
                   +255 700 000 000
                 </a>

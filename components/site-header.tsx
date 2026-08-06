@@ -151,7 +151,7 @@ export function SiteHeader() {
           </a>
           <a
             href="#contact"
-            className="inline-flex h-10 items-center gap-2 rounded-sm bg-brand px-5 text-[0.8125rem] font-semibold text-brand-foreground transition-all hover:bg-[#0d6b64]"
+            className="inline-flex h-10 items-center gap-2 rounded-sm bg-brand px-5 text-[0.8125rem] font-semibold text-brand-foreground transition-all hover:bg-neutral-800"
           >
             Request Consultation
             <ArrowUpRight className="size-4" />

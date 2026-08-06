@@ -54,7 +54,7 @@ export function AboutSection() {
             <Reveal delay={80}>
               <div className="mt-8 space-y-5 sm:mt-10 sm:space-y-7">
                 {beliefs.map((item) => (
-                  <div key={item.title} className="border-l-2 border-brand/40 pl-4 sm:pl-5">
+                  <div key={item.title} className="border-l-2 border-foreground/20 pl-4 sm:pl-5">
                     <h3 className="font-display text-sm font-semibold tracking-tight">{item.title}</h3>
                     <p className="mt-1 text-sm leading-relaxed text-muted-foreground sm:mt-1.5">
                       {item.body}

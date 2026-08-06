@@ -82,6 +82,7 @@ const categories: Category[] = [
   },
 ]
 
+/* Monochrome accents on dark section */
 export function ServicesSection() {
   return (
     <section id="services" className="section-pad scroll-mt-20 bg-ink text-ink-foreground sm:scroll-mt-24">
@@ -94,7 +95,10 @@ export function ServicesSection() {
               title="Everything your back office needs — under one mandate."
               description="Most firms split formation, books and tax. We keep them aligned so nothing falls between the cracks."
             />
-            <a href="#contact" className="btn-primary shrink-0">
+            <a
+              href="#contact"
+              className="inline-flex h-12 w-full shrink-0 items-center justify-center gap-2 rounded-sm bg-white px-5 text-sm font-semibold text-ink transition-colors hover:bg-white/90 sm:h-11 sm:w-auto"
+            >
               Scope a package
               <ArrowUpRight className="size-4" />
             </a>
@@ -110,22 +114,22 @@ export function ServicesSection() {
               >
                 <div>
                   <div className="flex items-center gap-3 sm:gap-4">
-                    <span className="font-display text-xs font-semibold tracking-[0.2em] text-brand-muted">
+                    <span className="font-display text-xs font-semibold tracking-[0.2em] text-white/40">
                       {category.index}
                     </span>
-                    <category.icon className="size-5 text-brand-muted" strokeWidth={1.5} />
+                    <category.icon className="size-5 text-white/45" strokeWidth={1.5} />
                   </div>
                   <h3 className="mt-4 font-display text-xl font-semibold tracking-tight sm:mt-5 sm:text-2xl">
                     {category.title}
                   </h3>
-                  <p className="mt-1 text-sm text-brand-muted">{category.subtitle}</p>
+                  <p className="mt-1 text-sm text-white/50">{category.subtitle}</p>
                   <p className="mt-3 text-sm leading-relaxed text-ink-foreground/55 sm:mt-4">
                     {category.description}
                   </p>
                   <ul className="mt-5 space-y-2.5 sm:mt-6">
                     {category.outcomes.map((outcome) => (
                       <li key={outcome} className="flex items-start gap-2.5 text-sm text-ink-foreground/80">
-                        <Check className="mt-0.5 size-4 shrink-0 text-brand" strokeWidth={2} />
+                        <Check className="mt-0.5 size-4 shrink-0 text-white" strokeWidth={2} />
                         {outcome}
                       </li>
                     ))}
@@ -148,7 +152,7 @@ export function ServicesSection() {
                   </ul>
                   <a
                     href="#contact"
-                    className="mt-6 inline-flex min-h-11 items-center gap-2 text-sm font-semibold text-brand-muted transition-colors hover:text-white sm:mt-7"
+                    className="mt-6 inline-flex min-h-11 items-center gap-2 text-sm font-semibold text-white/55 transition-colors hover:text-white sm:mt-7"
                   >
                     Discuss this service
                     <ArrowUpRight className="size-4" />
