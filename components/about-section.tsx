@@ -2,13 +2,7 @@ import Image from 'next/image'
 import { ArrowUpRight } from 'lucide-react'
 import { Reveal } from '@/components/reveal'
 import { SectionHeading } from '@/components/section-heading'
-
-const stats = [
-  { value: '1,200+', label: 'Companies assisted' },
-  { value: '12 yrs', label: 'Practice depth' },
-  { value: '98.7%', label: 'On-time filings' },
-  { value: '< 4 hrs', label: 'First response' },
-]
+import { AnimatedStats } from '@/components/animated-stats'
 
 const beliefs = [
   {
@@ -76,23 +70,7 @@ export function AboutSection() {
           </div>
         </div>
 
-        <Reveal delay={100}>
-          <dl className="mt-12 grid grid-cols-2 gap-x-4 gap-y-8 border-t border-border pt-8 sm:mt-16 sm:gap-8 sm:pt-10 lg:grid-cols-4">
-            {stats.map((stat) => (
-              <div key={stat.label}>
-                <dt className="sr-only">{stat.label}</dt>
-                <dd>
-                  <span className="block font-display text-[1.75rem] font-semibold tracking-tight sm:text-3xl lg:text-[2.25rem]">
-                    {stat.value}
-                  </span>
-                  <span className="mt-1 block text-xs text-muted-foreground sm:mt-1.5 sm:text-sm">
-                    {stat.label}
-                  </span>
-                </dd>
-              </div>
-            ))}
-          </dl>
-        </Reveal>
+        <AnimatedStats className="mt-12 sm:mt-16" />
       </div>
     </section>
   )
