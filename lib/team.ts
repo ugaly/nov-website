@@ -9,21 +9,21 @@ export type TeamMember = {
 export const teamMembers: TeamMember[] = [
   {
     id: 'ceo',
-    name: 'Joseph Mwinyi',
+    name: 'Xaveria Benigna Tharsis',
     role: 'Chief Executive Officer',
-    bio: 'Leads firm strategy and client relationships. Former corporate counsel with deep experience in Tanzanian company law and board governance.',
+    bio: 'Leads firm strategy and client relationships. Deep experience in Tanzanian company law, board governance and corporate services.',
     image: '/team-01.jpg',
   },
   {
     id: 'tax-associate',
-    name: 'Asha Juma',
+    name: 'Novatus Nolaskus Mpota',
     role: 'Tax Associate',
     bio: 'Handles VAT, PAYE, SDL and corporate tax filings. Keeps clients ahead of TRA deadlines with clear, practical guidance.',
     image: '/team-02.jpg',
   },
   {
     id: 'company-secretary',
-    name: 'Daniel Okello',
+    name: 'Nancy Jameck Lyatuu',
     role: 'Company Secretary',
     bio: 'Manages BRELA filings, statutory registers, share transfers and annual returns for startups through multi-entity groups.',
     image: '/team-03.jpg',
