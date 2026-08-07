@@ -5,7 +5,9 @@ import { AboutSection } from '@/components/about-section'
 import { ServicesSection } from '@/components/services-section'
 import { ProcessSection } from '@/components/process-section'
 import { WhyChooseUs } from '@/components/why-choose-us'
+import { VisualFeatures } from '@/components/visual-features'
 import { IndustriesSection } from '@/components/industries-section'
+import { TeamSection } from '@/components/team-section'
 import { TestimonialsSection } from '@/components/testimonials-section'
 import { FaqSection } from '@/components/faq-section'
 import { CtaBand } from '@/components/cta-band'
@@ -23,7 +25,9 @@ export default function Page() {
         <ServicesSection />
         <ProcessSection />
         <WhyChooseUs />
+        <VisualFeatures />
         <IndustriesSection />
+        <TeamSection />
         <TestimonialsSection />
         <FaqSection />
         <CtaBand />

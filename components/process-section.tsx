@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import { Reveal } from '@/components/reveal'
 import { SectionHeading } from '@/components/section-heading'
 
@@ -5,30 +6,22 @@ const steps = [
   {
     step: '01',
     title: 'Discovery call',
-    description:
-      'We map your entity status, deadlines and goals — then confirm what success looks like.',
-    detail: '30–45 min · no obligation',
+    description: 'We map your entity status, deadlines and goals.',
   },
   {
     step: '02',
     title: 'Scope & checklist',
-    description:
-      'A clear workplan: documents needed, filings involved, timelines and fee structure.',
-    detail: 'Written scope before work starts',
+    description: 'Written workplan, timelines and fees before work starts.',
   },
   {
     step: '03',
     title: 'Prepare & review',
-    description:
-      'We draft resolutions, applications and returns. You approve before any submission.',
-    detail: 'Your sign-off on every action',
+    description: 'You approve every filing before we submit.',
   },
   {
     step: '04',
     title: 'File & follow through',
-    description:
-      'We submit, track responses, cure queries and deliver confirmed results plus next steps.',
-    detail: 'Updates until completion',
+    description: 'We track responses and deliver confirmed results.',
   },
 ]
 
@@ -36,42 +29,50 @@ export function ProcessSection() {
   return (
     <section id="process" className="section-pad scroll-mt-20 bg-secondary/60 sm:scroll-mt-24">
       <div className="container-x">
-        <Reveal>
-          <SectionHeading
-            eyebrow="How it works"
-            title="A guided path from first conversation to confirmed filings."
-            description="No black boxes. You always know the stage, the owner, and what we are waiting on."
-          />
-        </Reveal>
-
-        {/* Mobile: vertical timeline · Desktop: grid */}
-        <ol className="relative mt-10 space-y-0 sm:mt-14 sm:grid sm:grid-cols-2 sm:gap-10 sm:space-y-0 lg:grid-cols-4 lg:gap-8">
-          <div
-            className="absolute bottom-2 left-[0.7rem] top-2 w-px bg-border sm:hidden"
-            aria-hidden="true"
-          />
-          {steps.map((step, i) => (
-            <Reveal as="li" key={step.step} delay={i * 80} className="relative">
-              <div className="flex gap-4 pb-8 last:pb-0 sm:block sm:pb-0">
-                <span className="relative z-10 flex size-6 shrink-0 items-center justify-center rounded-full bg-secondary ring-4 ring-secondary sm:hidden">
-                  <span className="size-2 rounded-full bg-brand" />
-                </span>
-                <div>
-                  <span className="font-display text-2xl font-semibold tracking-tight text-brand/70 sm:text-3xl">
-                    {step.step}
-                  </span>
-                  <h3 className="mt-2 font-display text-base font-semibold tracking-tight sm:mt-4 sm:text-lg">
-                    {step.title}
-                  </h3>
-                  <p className="mt-1.5 text-sm leading-relaxed text-muted-foreground sm:mt-2">
-                    {step.description}
-                  </p>
-                  <p className="mt-3 text-xs font-medium text-foreground/40 sm:mt-4">{step.detail}</p>
-                </div>
-              </div>
+        <div className="grid items-start gap-10 lg:grid-cols-2 lg:gap-16">
+          <div>
+            <Reveal>
+              <SectionHeading
+                eyebrow="How it works"
+                title="Clear steps from first call to confirmed filings."
+                description="No black boxes — you always know the stage and the owner."
+              />
             </Reveal>
-          ))}
-        </ol>
+
+            <ol className="mt-8 space-y-6 border-t border-border pt-8 sm:mt-10">
+              {steps.map((step, i) => (
+                <Reveal as="li" key={step.step} delay={i * 50}>
+                  <div className="flex gap-4">
+                    <span className="font-display text-sm font-semibold tracking-[0.14em] text-muted-foreground">
+                      {step.step}
+                    </span>
+                    <div>
+                      <h3 className="font-display text-base font-semibold tracking-tight">{step.title}</h3>
+                      <p className="mt-1 text-sm leading-relaxed text-muted-foreground">
+                        {step.description}
+                      </p>
+                    </div>
+                  </div>
+                </Reveal>
+              ))}
+            </ol>
+          </div>
+
+          <Reveal delay={80} className="lg:sticky lg:top-28">
+            <div className="relative overflow-hidden">
+              <Image
+                src="/section-tax-day.jpg"
+                alt="Tax day marked on a compliance calendar"
+                width={1200}
+                height={900}
+                className="aspect-[4/3] w-full object-cover"
+              />
+              <p className="mt-4 text-sm text-muted-foreground">
+                Deadlines tracked. Filings owned. Nothing left to chance.
+              </p>
+            </div>
+          </Reveal>
+        </div>
       </div>
     </section>
   )

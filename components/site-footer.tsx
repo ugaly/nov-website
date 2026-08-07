@@ -5,20 +5,20 @@ const columns = [
   {
     title: 'Company',
     links: [
-      { label: 'About', href: '#about' },
-      { label: 'How it works', href: '#process' },
-      { label: 'Who we serve', href: '#industries' },
-      { label: 'FAQ', href: '#faq' },
-      { label: 'Contact', href: '#contact' },
+      { label: 'About', href: '/#about' },
+      { label: 'How it works', href: '/#process' },
+      { label: 'Our team', href: '/team' },
+      { label: 'FAQ', href: '/#faq' },
+      { label: 'Contact', href: '/#contact' },
     ],
   },
   {
     title: 'Services',
     links: [
-      { label: 'Company Secretarial', href: '#company-secretarial' },
-      { label: 'Accounting & Tax', href: '#accounting-tax' },
-      { label: 'Business Advisory', href: '#advisory' },
-      { label: 'All services', href: '#services' },
+      { label: 'Company Secretarial', href: '/#company-secretarial' },
+      { label: 'Accounting & Tax', href: '/#accounting-tax' },
+      { label: 'Business Advisory', href: '/#advisory' },
+      { label: 'All services', href: '/#services' },
     ],
   },
 ]
@@ -34,7 +34,7 @@ export function SiteFooter() {
             Company secretarial, accounting, tax and advisory for ambitious companies in Tanzania.
           </p>
           <a
-            href="#contact"
+            href="/#contact"
             className="mt-5 inline-flex h-11 w-full items-center justify-center gap-2 rounded-sm bg-white px-5 text-sm font-semibold text-ink transition-colors hover:bg-white/90 sm:mt-6 sm:w-auto"
           >
             Request Consultation
