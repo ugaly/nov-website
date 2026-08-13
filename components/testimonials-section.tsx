@@ -37,7 +37,7 @@ export function TestimonialsSection() {
           {stories.map((story, i) => (
             <Reveal key={story.name} delay={i * 60}>
               <blockquote>
-                <p className="font-display text-lg font-medium leading-snug tracking-tight text-foreground sm:text-xl">
+                <p className="font-display text-lg font-medium italic leading-snug tracking-tight text-foreground sm:text-xl">
                   “{story.quote}”
                 </p>
                 <footer className="mt-5">

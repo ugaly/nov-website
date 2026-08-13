@@ -1,17 +1,39 @@
 import { Analytics } from '@vercel/analytics/next'
 import type { Metadata, Viewport } from 'next'
-import { Figtree, Sora } from 'next/font/google'
+import localFont from 'next/font/local'
 import './globals.css'
 
-const figtree = Figtree({
-  subsets: ['latin'],
-  variable: '--font-figtree',
+const publicSans = localFont({
+  src: [
+    {
+      path: './fonts/PublicSans-latin.woff2',
+      weight: '100 900',
+      style: 'normal',
+    },
+    {
+      path: './fonts/PublicSans-Italic-latin.woff2',
+      weight: '100 900',
+      style: 'italic',
+    },
+  ],
+  variable: '--font-public-sans',
   display: 'swap',
 })
 
-const sora = Sora({
-  subsets: ['latin'],
-  variable: '--font-sora',
+const newsreader = localFont({
+  src: [
+    {
+      path: './fonts/Newsreader-latin.woff2',
+      weight: '400 700',
+      style: 'normal',
+    },
+    {
+      path: './fonts/Newsreader-Italic-latin.woff2',
+      weight: '400 700',
+      style: 'italic',
+    },
+  ],
+  variable: '--font-newsreader',
   display: 'swap',
 })
 
@@ -53,7 +75,7 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en" className={`light ${figtree.variable} ${sora.variable} bg-background`}>
+    <html lang="en" className={`light ${publicSans.variable} ${newsreader.variable} bg-background`}>
       <body className="font-sans antialiased">
         {children}
         {process.env.NODE_ENV === 'production' && <Analytics />}
