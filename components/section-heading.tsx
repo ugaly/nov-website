@@ -6,6 +6,7 @@ export function SectionHeading({
   description,
   align = 'left',
   className,
+  eyebrowClassName,
   invert = false,
 }: {
   eyebrow: string
@@ -13,6 +14,7 @@ export function SectionHeading({
   description?: string
   align?: 'left' | 'center'
   className?: string
+  eyebrowClassName?: string
   invert?: boolean
 }) {
   return (
@@ -20,6 +22,7 @@ export function SectionHeading({
       <p
         className={cn(
           'text-[0.6875rem] font-semibold uppercase tracking-[0.16em]',
+          eyebrowClassName,
           invert ? 'text-white/45' : 'text-brand',
         )}
       >

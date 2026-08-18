@@ -39,7 +39,8 @@ export function AboutSection() {
           <div className="order-2 lg:order-1">
             <Reveal>
               <SectionHeading
-                eyebrow="About 11.28"
+                eyebrow="About November 28"
+                eyebrowClassName="text-xs tracking-[0.18em] sm:text-sm"
                 title="Built for companies that refuse to treat compliance as an afterthought."
                 description="Company secretarial professionals, accountants and advisors based at Morocco Square, Dar es Salaam. From first incorporation through annual returns and board support — structure, accuracy and confidence to grow legally."
               />
