@@ -21,13 +21,13 @@ export function Logo({
     <span className={cn('inline-flex items-center', className)}>
       <Image
         src={variant === 'white' ? '/logo-white.png' : '/logo-dark.png'}
-        alt="11.28 corporate services"
+        alt="November 28 corporate services"
         width={333}
         height={131}
         priority
         className={cn(sizeClass, 'object-contain object-left')}
       />
-      <span className="sr-only">11.28 Corporate Services</span>
+      <span className="sr-only">November 28 Corporate Services</span>
     </span>
   )
 }

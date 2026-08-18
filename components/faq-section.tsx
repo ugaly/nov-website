@@ -7,7 +7,7 @@ import { cn } from '@/lib/utils'
 
 const faqs = [
   {
-    q: 'What does 11.28 handle?',
+    q: 'What does November 28 handle?',
     a: 'Company formation and secretarial compliance, accounting and tax declarations, plus advisory on structure and growth. Engage one service line or retain us across the full stack.',
   },
   {

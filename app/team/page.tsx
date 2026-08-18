@@ -9,7 +9,7 @@ import { teamMembers } from '@/lib/team'
 export const metadata: Metadata = {
   title: 'Our Team',
   description:
-    'Meet the 11.28 team — company secretaries, tax associates, accountants and advisors in Dar es Salaam.',
+    'Meet the November 28 team — company secretaries, tax associates, accountants and advisors in Dar es Salaam.',
 }
 
 export default function TeamPage() {
@@ -32,7 +32,7 @@ export default function TeamPage() {
                 Our team
               </p>
               <h1 className="mt-3 font-display text-3xl font-semibold tracking-tight sm:text-4xl">
-                The full 11.28 practice team.
+                The full November 28 practice team.
               </h1>
               <p className="mt-4 text-base leading-relaxed text-muted-foreground">
                 Six specialists covering formation, secretarial, accounting, tax and advisory —

@@ -65,7 +65,7 @@ export function SiteHeader() {
       )}
     >
       <div className="container-x flex h-14 items-center justify-between gap-3 sm:h-16 lg:h-[4.5rem]">
-        <Link href="/" className="relative z-10 flex items-center" aria-label="11.28 home">
+        <Link href="/" className="relative z-10 flex items-center" aria-label="November 28 home">
           <Logo variant={onDark ? 'white' : 'dark'} />
         </Link>
 

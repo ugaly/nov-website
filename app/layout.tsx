@@ -39,11 +39,11 @@ const newsreader = localFont({
 
 export const metadata: Metadata = {
   title: {
-    default: '11.28 — Company Secretarial, Accounting, Tax & Advisory',
-    template: '%s | 11.28',
+    default: 'November 28 — Company Secretarial, Accounting, Tax & Advisory',
+    template: '%s | November 28',
   },
   description:
-    '11.28 is a corporate services firm in Dar es Salaam providing company formation, secretarial services, accounting, tax compliance and business advisory for SMEs, startups and corporations across Tanzania.',
+    'November 28 is a corporate services firm in Dar es Salaam providing company formation, secretarial services, accounting, tax compliance and business advisory for SMEs, startups and corporations across Tanzania.',
   keywords: [
     'company secretarial services Tanzania',
     'company formation Dar es Salaam',
@@ -51,11 +51,11 @@ export const metadata: Metadata = {
     'tax compliance BRELA',
     'business advisory',
     'corporate compliance',
-    '11.28',
+    'November 28',
   ],
   metadataBase: new URL('https://eleven-twentyeight.example'),
   openGraph: {
-    title: '11.28 — Corporate Services & Compliance',
+    title: 'November 28 — Corporate Services & Compliance',
     description:
       'Company formation, secretarial services, accounting, tax compliance and business advisory in Dar es Salaam, Tanzania.',
     type: 'website',

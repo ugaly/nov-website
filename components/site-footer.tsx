@@ -95,7 +95,7 @@ export function SiteFooter() {
 
         {/* Bottom bar */}
         <div className="flex flex-col gap-3 border-t border-white/10 pt-5 text-xs text-white/35 sm:flex-row sm:items-center sm:justify-between sm:pt-6 sm:text-sm">
-          <p>© {new Date().getFullYear()} 11.28 Corporate Services.</p>
+          <p>© {new Date().getFullYear()} November 28 Corporate Services.</p>
           <div className="flex gap-5">
             <a href="#" className="transition-colors hover:text-white">
               Privacy

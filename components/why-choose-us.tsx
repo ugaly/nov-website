@@ -37,7 +37,8 @@ export function WhyChooseUs() {
           <div>
             <Reveal>
               <SectionHeading
-                eyebrow="Why 11.28"
+                eyebrow="Why November 28"
+                eyebrowClassName="text-xs normal-case tracking-[0.04em] sm:text-sm"
                 title="Precision when the numbers have to be right."
                 description="Outsourcing compliance only works when the firm is accountable and fluent in how Tanzanian companies operate."
               />

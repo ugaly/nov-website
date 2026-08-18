@@ -148,7 +148,7 @@ export function ContactSection() {
 
           <div className="mt-8 overflow-hidden border border-border sm:mt-10">
             <iframe
-              title="11.28 office — Morocco Square, Dar es Salaam"
+              title="November 28 office — Morocco Square, Dar es Salaam"
               src="https://maps.google.com/maps?q=Morocco%20Square%2C%20Dar%20es%20Salaam%2C%20Tanzania&t=&z=15&ie=UTF8&iwloc=&output=embed"
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
