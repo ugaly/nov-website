@@ -19,7 +19,7 @@ const contactInfo = [
   { icon: MapPin, label: 'Office', value: 'Morocco Square, Dar es Salaam' },
   { icon: Mail, label: 'Email', value: 'companie@companies.co.tz', href: 'mailto:companie@companies.co.tz' },
   { icon: Phone, label: 'Phone', value: '+255 700 000 000', href: 'tel:+255700000000' },
-  { icon: Clock, label: 'Hours', value: 'Mon – Fri · 08:00 – 17:00 EAT' },
+  { icon: Clock, label: 'Hours', value: '08:00 - 17:00' },
 ]
 
 export function ContactSection() {

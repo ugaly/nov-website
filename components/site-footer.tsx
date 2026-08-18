@@ -1,4 +1,4 @@
-import { Mail, Phone, MapPin, ArrowUpRight } from 'lucide-react'
+import { Mail, Phone, MapPin, Clock, ArrowUpRight } from 'lucide-react'
 import { Logo } from '@/components/logo'
 
 const columns = [
@@ -88,6 +88,10 @@ export function SiteFooter() {
                 <a href="tel:+255700000000" className="transition-colors hover:text-white">
                   +255 700 000 000
                 </a>
+              </li>
+              <li className="flex items-center gap-2.5">
+                <Clock className="size-3.5 shrink-0 text-white/40 sm:size-4" />
+                <span>08:00 - 17:00</span>
               </li>
             </ul>
           </div>
