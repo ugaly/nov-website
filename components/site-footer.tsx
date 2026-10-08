@@ -77,16 +77,16 @@ export function SiteFooter() {
               <li className="flex items-start gap-2.5">
                 <Mail className="mt-0.5 size-3.5 shrink-0 text-white/40 sm:size-4" />
                 <a
-                  href="mailto:companie@companies.co.tz"
+                  href="mailto:november@november28.co.tz"
                   className="break-all transition-colors hover:text-white"
                 >
-                  companie@companies.co.tz
+                  november@november28.co.tz
                 </a>
               </li>
               <li className="flex items-center gap-2.5">
                 <Phone className="size-3.5 shrink-0 text-white/40 sm:size-4" />
-                <a href="tel:+255700000000" className="transition-colors hover:text-white">
-                  +255 700 000 000
+                <a href="tel:+255717117991" className="transition-colors hover:text-white">
+                  +255 717 117 991
                 </a>
               </li>
               <li className="flex items-center gap-2.5">

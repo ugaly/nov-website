@@ -40,7 +40,7 @@ export function HeroSection() {
               Request Consultation
               <ArrowUpRight className="size-4" />
             </a>
-            <a href="tel:+255700000000" className="btn-ghost-light h-[3.15rem] sm:h-[3.25rem] sm:px-7">
+            <a href="tel:+255717117991" className="btn-ghost-light h-[3.15rem] sm:h-[3.25rem] sm:px-7">
               <Phone className="size-4" />
               Talk to a specialist
             </a>

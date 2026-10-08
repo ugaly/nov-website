@@ -13,8 +13,8 @@ type Stat = {
 }
 
 const stats: Stat[] = [
-  { end: 1200, suffix: '+', label: 'Companies assisted', duration: 2000 },
-  { end: 12, suffix: ' yrs', label: 'Practice depth', duration: 1600 },
+  { end: 120, suffix: '', label: 'Companies assisted', duration: 2000 },
+  { end: 17, suffix: ' yrs', label: 'Practice depth', duration: 1600 },
   { end: 98.7, decimals: 1, suffix: '%', label: 'On-time filings', duration: 1800 },
   { end: 4, prefix: '< ', suffix: ' hrs', label: 'First response', duration: 1400 },
 ]

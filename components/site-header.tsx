@@ -142,7 +142,7 @@ export function SiteHeader() {
 
         <div className="hidden items-center gap-4 lg:flex">
           <a
-            href="tel:+255700000000"
+            href="tel:+255717117991"
             className={cn(
               'inline-flex items-center gap-2 text-[0.8125rem] font-semibold transition-colors',
               onDark
@@ -151,7 +151,7 @@ export function SiteHeader() {
             )}
           >
             <Phone className="size-3.5" />
-            +255 700 000 000
+            +255 717 117 991
           </a>
           <Link
             href="/#contact"
@@ -223,11 +223,11 @@ export function SiteHeader() {
               <ArrowUpRight className="size-4" />
             </Link>
             <a
-              href="tel:+255700000000"
+              href="tel:+255717117991"
               className="mt-2.5 inline-flex h-12 w-full items-center justify-center gap-2 rounded-sm border border-border text-sm font-semibold text-foreground"
             >
               <Phone className="size-4" />
-              +255 700 000 000
+              +255 717 117 991
             </a>
           </div>
         </div>

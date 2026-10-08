@@ -35,7 +35,7 @@ export function CtaBand() {
               Request Consultation
               <ArrowUpRight className="size-4" />
             </a>
-            <a href="tel:+255700000000" className="btn-ghost-light">
+            <a href="tel:+255717117991" className="btn-ghost-light">
               <Phone className="size-4" />
               Call us
             </a>

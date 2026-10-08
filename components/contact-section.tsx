@@ -17,17 +17,31 @@ const services = [
 
 const contactInfo = [
   { icon: MapPin, label: 'Office', value: 'Morocco Square, Dar es Salaam' },
-  { icon: Mail, label: 'Email', value: 'companie@companies.co.tz', href: 'mailto:companie@companies.co.tz' },
-  { icon: Phone, label: 'Phone', value: '+255 700 000 000', href: 'tel:+255700000000' },
+  { icon: Mail, label: 'Email', value: 'november@november28.co.tz', href: 'mailto:november@november28.co.tz' },
+  { icon: Phone, label: 'Phone', value: '+255 717 117 991', href: 'tel:+255717117991' },
   { icon: Clock, label: 'Hours', value: '08:00 - 17:00' },
 ]
 
 export function ContactSection() {
   const [submitted, setSubmitted] = useState(false)
 
-  const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
+  const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault()
-    setSubmitted(true)
+
+    const form = e.currentTarget
+    const formData = new FormData(form)
+    formData.set('access_key', 'e2e98095-8252-4051-b3c9-fac528048a3b')
+    formData.set('subject', 'Website consultation request')
+
+    try {
+      await fetch('https://api.web3forms.com/submit', {
+        method: 'POST',
+        body: formData,
+      })
+      setSubmitted(true)
+    } catch (error) {
+      setSubmitted(true)
+    }
   }
 
   return (
@@ -53,7 +67,9 @@ export function ContactSection() {
               </button>
             </div>
           ) : (
-            <form onSubmit={handleSubmit} className="grid gap-4">
+            <form action="https://api.web3forms.com/submit" method="POST" onSubmit={handleSubmit} className="grid gap-4">
+              <input type="hidden" name="access_key" value="e2e98095-8252-4051-b3c9-fac528048a3b" />
+              <input type="hidden" name="subject" value="Website consultation request" />
               <h3 className="font-display text-lg font-semibold tracking-tight">
                 Request a consultation
               </h3>
@@ -81,7 +97,7 @@ export function ContactSection() {
                     id="phone"
                     name="phone"
                     type="tel"
-                    placeholder="+255 700 000 000"
+                    placeholder="+255 717 117 991"
                     className={inputClass}
                   />
                 </Field>
