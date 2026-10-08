@@ -40,9 +40,21 @@ export function HeroSection() {
               Request Consultation
               <ArrowUpRight className="size-4" />
             </a>
-            <a href="tel:+255717117991" className="btn-ghost-light h-[3.15rem] sm:h-[3.25rem] sm:px-7">
-              <Phone className="size-4" />
-              Talk to a specialist
+            <a
+              href="tel:+255717117991"
+              className="group inline-flex h-[3.15rem] items-center justify-center rounded-sm border border-white/30 bg-white/8 px-4 text-white/90 backdrop-blur-sm transition-all duration-300 hover:bg-white/12 sm:h-[3.25rem] sm:px-7"
+            >
+              <span className="relative flex items-center justify-center gap-2 overflow-hidden">
+                <Phone className="size-4 shrink-0" />
+                <span className="relative flex h-[1.05rem] items-center justify-center overflow-hidden">
+                  <span className="absolute bottom-[-2rem] whitespace-nowrap text-sm font-medium text-white transition-all duration-300 ease-out group-hover:bottom-0">
+                    +255 717 117 991
+                  </span>
+                  <span className="whitespace-nowrap text-sm font-medium text-white transition-all duration-300 ease-out group-hover:-translate-y-[1.05rem] group-hover:opacity-0">
+                    Talk to a specialist
+                  </span>
+                </span>
+              </span>
             </a>
           </div>
         </div>

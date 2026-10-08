@@ -17,17 +17,6 @@ const pillars = [
   },
 ]
 
-const clients = [
-  'MERIDIAN',
-  'ZANZARO',
-  'NORTHBRIDGE',
-  'SERENGETI CO.',
-  'ATLAS HOLDINGS',
-  'KILIMA GROUP',
-  'VANTAGE',
-  'BLUEHARBOR',
-]
-
 export function TrustMarquee() {
   return (
     <section className="border-b border-border bg-white">
@@ -40,24 +29,6 @@ export function TrustMarquee() {
             <p className="mt-1.5 text-sm leading-relaxed text-muted-foreground sm:mt-2">{item.copy}</p>
           </div>
         ))}
-      </div>
-
-      <div className="border-t border-border py-6 sm:py-8">
-        <p className="mb-4 text-center text-[0.625rem] font-semibold uppercase tracking-[0.16em] text-muted-foreground sm:mb-5 sm:text-[0.6875rem] sm:tracking-[0.18em]">
-          Trusted across Tanzania
-        </p>
-        <div className="marquee-pause relative overflow-hidden [mask-image:linear-gradient(to_right,transparent,black_8%,black_92%,transparent)]">
-          <div className="flex w-max animate-marquee items-center gap-10 pr-10 sm:gap-14 sm:pr-14">
-            {[...clients, ...clients].map((c, i) => (
-              <span
-                key={`${c}-${i}`}
-                className="whitespace-nowrap font-display text-sm font-semibold tracking-[0.06em] text-foreground/25 sm:text-base"
-              >
-                {c}
-              </span>
-            ))}
-          </div>
-        </div>
       </div>
     </section>
   )
