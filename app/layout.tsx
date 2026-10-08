@@ -55,9 +55,9 @@ export const metadata: Metadata = {
   ],
   metadataBase: new URL('https://eleven-twentyeight.example'),
   icons: {
-    icon: '/icon.svg',
-    shortcut: '/icon.svg',
-    apple: '/apple-icon.png',
+    icon: '/logo-dark.png',
+    shortcut: '/logo-dark.png',
+    apple: '/logo-dark.png',
   },
   openGraph: {
     title: 'November 28 — Corporate Services & Compliance',
