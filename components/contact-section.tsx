@@ -25,23 +25,36 @@ const contactInfo = [
 export function ContactSection() {
   const [submitted, setSubmitted] = useState(false)
 
-  const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
+  const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault()
 
     const form = e.currentTarget
     const formData = new FormData(form)
-    formData.set('access_key', 'e2e98095-8252-4051-b3c9-fac528048a3b')
-    formData.set('subject', 'Website consultation request')
 
-    try {
-      await fetch('https://api.web3forms.com/submit', {
-        method: 'POST',
-        body: formData,
-      })
-      setSubmitted(true)
-    } catch (error) {
-      setSubmitted(true)
-    }
+    const fullName = formData.get('name')?.toString().trim() || 'Not provided'
+    const company = formData.get('company')?.toString().trim() || 'Not provided'
+    const email = formData.get('email')?.toString().trim() || 'Not provided'
+    const phone = formData.get('phone')?.toString().trim() || 'Not provided'
+    const service = formData.get('service')?.toString().trim() || 'Not provided'
+    const message = formData.get('message')?.toString().trim() || 'Not provided'
+    const recipient = 'november@november28.co.tz'
+
+    const emailBody = [
+      'Consultation Request',
+      '',
+      'Full Name: ' + fullName,
+      'Company: ' + company,
+      'Email: ' + email,
+      'Phone: ' + phone,
+      'Service: ' + service,
+      '',
+      'How can we help?',
+      message,
+    ].join('\n')
+
+    const subject = encodeURIComponent(`Consultation Request - ${fullName}`)
+    window.location.href = `mailto:${recipient}?subject=${subject}&body=${encodeURIComponent(emailBody)}`
+    setSubmitted(true)
   }
 
   return (
@@ -67,9 +80,7 @@ export function ContactSection() {
               </button>
             </div>
           ) : (
-            <form action="https://api.web3forms.com/submit" method="POST" onSubmit={handleSubmit} className="grid gap-4">
-              <input type="hidden" name="access_key" value="e2e98095-8252-4051-b3c9-fac528048a3b" />
-              <input type="hidden" name="subject" value="Website consultation request" />
+            <form onSubmit={handleSubmit} className="grid gap-4">
               <h3 className="font-display text-lg font-semibold tracking-tight">
                 Request a consultation
               </h3>
